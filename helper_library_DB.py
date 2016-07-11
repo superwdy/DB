@@ -12,5 +12,5 @@ Code	Description
 5xx	Server error. Check DropboxOps.
 """
 hostname = ['api.dropboxapi.com', 'content.dropboxapi.com','notify.dropboxapi.com']
-response_type = 'Wvf7h-SwacMAAAAAAAAD8e4u1BoGJnyJeb6Y-UuJA-LGIJ9vMAMs3hygpQEKFWsp'
-client_id = 'dixy9ucfrtp3dj6'
+response_type = ''
+client_id = ''
