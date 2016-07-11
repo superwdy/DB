@@ -3,12 +3,13 @@ import dropbox
 import requests
 import json
 
+"""
 #Get metadata from a specific file (metadata = information on the file
 #why is this a post request?
 def test_get_metadata():
     url = "https://api.dropboxapi.com/2/files/alpha/get_metadata"
     headers = {
-        "Authorization": "Bearer Wvf7h-SwacMAAAAAAAAD_eB-5i3e8rTfiitvptI_f5McBJijqskF377KiAK_Lmcy",
+        "Authorization": "Bearer <input token code>",
         "Content-Type": "application/json"
     }
     data = {
@@ -27,7 +28,7 @@ def test_get_metadata():
 def test_upload():
     url = "https://content.dropboxapi.com/2/files/alpha/upload"
     headers = {
-        "Authorization": "Bearer Wvf7h-SwacMAAAAAAAAD_eB-5i3e8rTfiitvptI_f5McBJijqskF377KiAK_Lmcy",
+        "Authorization": "Bearer <input token code>",
         "Content-Type": "application/octet-stream",
         "Dropbox-API-Arg": "{\"path\":\"/Rome.jpg\"}"
     }
@@ -39,7 +40,7 @@ def test_upload():
 def test_copy():
     url = "https://api.dropboxapi.com/2/files/copy"
     headers = {
-        "Authorization": "Bearer Wvf7h-SwacMAAAAAAAAD_eB-5i3e8rTfiitvptI_f5McBJijqskF377KiAK_Lmcy",
+        "Authorization": "Bearer <input token code>",
         "Content-Type": "application/json"
     }
     data = {
@@ -53,7 +54,7 @@ def test_copy():
 def test_create_folder():
     url = "https://api.dropboxapi.com/2/files/create_folder"
     headers = {
-        "Authorization": "Bearer Wvf7h-SwacMAAAAAAAAD90mBGSwzQbnQNCA7cn2SdUwq_-OEEdov7j5S66X4G2n6",
+        "Authorization": "Bearer <input token code>",
         "Content-Type": "application/json"
     }
     data = {
@@ -65,7 +66,7 @@ def test_create_folder():
 def test_delete_folder():
     url = "https://api.dropboxapi.com/2/files/delete"
     headers = {
-        "Authorization": "Bearer Wvf7h-SwacMAAAAAAAAD_eB-5i3e8rTfiitvptI_f5McBJijqskF377KiAK_Lmcy",
+        "Authorization": "Bearer <input token code>",
         "Content-Type": "application/json"
     }
     data = {
@@ -76,13 +77,13 @@ def test_delete_folder():
 
 #gets the client info using drop boxes sdk
 def test_dbx_sdk1():
-    client = dropbox.client.DropboxClient('Wvf7h-SwacMAAAAAAAAD8jxGJULsboXJFzzcMCWd7nC-jHdEGxunbq7mbCyKY_r3')
+    client = dropbox.client.DropboxClient('<input token code>')
     print 'linked account: ', client.account_info()
 
 #gets a list of all files in the root folder
 def test_dbx_sdk2():
     dbx = dropbox.Dropbox(
-        'Wvf7h-SwacMAAAAAAAAD8OYQVe3TLtRsND4D1BbCpEwz8lHkjaujolweU4EaI9b5')
+        '<input token code')
 
     dbx.users_get_current_account()
 
@@ -93,3 +94,5 @@ def test_dbx_sdk2():
                      "out Cavs", '/cavs vs warriors/game 5/story.txt')
 
     print(dbx.files_get_metadata('/Cavs vs Warriors/Game 5/story.txt').server_modified)
+"""
+
