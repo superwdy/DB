@@ -11,12 +11,32 @@ https://www.dropbox.com/developers/documentation/http/documentation.
 def test_copy_valid():
     assert True == False
 
+def test_copy_from_path_valid_folder():
+    assert True == False
+
+def test_copy_from_path_invalid():
+    assert True == False
+
 @pytest.mark.files_copy
 # This will test if the api will copy an existing file on dropbox to an
 # existing path. Step 1) Create any file on dropbox. Step 2) Create a
 # new directory. Step 3) Use the copy api to copy the file onto the new
 # created path. Step 4) Assert if the file name and path matches the
 # metadata name and path by using the search API.
-def test_copy_existing_path():
+def test_copy_existing_path_folder():
     assert True == False
 
+def test_copy_from_path_valid_file():
+    assert True == False
+
+def test_copy_from_existing_path_file():
+    assert True == False
+
+def test_copy_to_path_valid():
+    assert True == False
+
+def test_copy_to_path_invalid():
+    assert True == False
+
+def test_copy_deleted_metadata():
+    assert True == False
